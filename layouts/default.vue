@@ -1,10 +1,14 @@
 <template>
   <div>
     <div id="navber">
-      <NuxtLink to="/">Home</NuxtLink>
-      <NuxtLink to="/videos">Videos</NuxtLink>
+      <div class="navber-link">
+        <NuxtLink to="/">Home</NuxtLink>
+        <NuxtLink to="/videos">Videos</NuxtLink>
+      </div>
     </div>
-    <Nuxt />
+    <div id="default-body">
+      <Nuxt />
+    </div>
   </div>
 </template>
 
@@ -12,10 +16,8 @@
 export default {}
 </script>
 
-<style>
-*,
-*:before,
-*:after {
+<style lang="scss">
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,10 +27,18 @@ export default {}
   height: 40px;
   width: 100%;
   background-color: #333;
+  .navber-link {
+    max-width: 800px;
+    margin: auto;
+    a {
+      color: white;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+  }
 }
-#navber a {
-  color: white;
-  text-decoration: none;
-  margin-right: 1rem;
+#default-body {
+  max-width: 800px;
+  margin: auto;
 }
 </style>
