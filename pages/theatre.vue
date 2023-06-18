@@ -5,7 +5,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  layout: 'theatre',
+}
 </script>
 
 <style lang="scss" scoped></style>
