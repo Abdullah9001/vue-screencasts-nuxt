@@ -29,6 +29,6 @@ export default {}
 #navber a {
   color: white;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 </style>
